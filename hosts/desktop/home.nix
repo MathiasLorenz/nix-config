@@ -37,7 +37,7 @@ in
     fd
     ncdu
     vim
-    neovim
+    # neovim
     wl-clipboard
     ripgrep
     go-task
@@ -49,12 +49,10 @@ in
     nodejs_23
     magic-wormhole
     brightnessctl # Backlight control
-    flyctl
-    tenv
+    # flyctl
+    # tenv
     traceroute
     dig
-    nerd-fonts.hack
-    # fwupd # The tool is fwupdmgr, installed with pacman instead, otherwise some gdbus things are bonked
     jq
     yq-go
     eza
@@ -94,8 +92,8 @@ in
     # to remedy this
 
     # Using asdf-vm turned out to be a shit show, this worked surprisingly well
-    beamMinimal25Packages.elixir_1_17
-    wkhtmltopdf
+    # beamMinimal25Packages.elixir_1_17
+    # wkhtmltopdf
 
     blueman
 
@@ -104,9 +102,9 @@ in
 
     # Better to just install these with pacman...
     # slack # slack-desktop-wayland in paru
-    _1password-gui # 1password in paru
+    # _1password-gui # 1password in paru
     # bitwarden-desktop # bitwarden in paru
-    _1password-cli
+    # _1password-cli
 
     gcc
     lua5_1
@@ -118,8 +116,6 @@ in
  
     # Already bundled with pacman
     # git
-
-    paru
 
     # This does not work currently :(
     # containerd
@@ -139,12 +135,12 @@ in
     # ghostty
 
     # The sway 'downstream' dependencies can still be installed with home-manager
-    swaybg
-    swayidle
+    # swaybg
+    # swayidle
     # swaylock # Even when using the correct password I can't unluck with this - it works if installed with pacman..
-    waybar
-    mako
-    swayimg
+    # waybar
+    # mako
+    # swayimg
 
     gh
     hub
