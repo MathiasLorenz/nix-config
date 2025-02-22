@@ -7,6 +7,7 @@ in
 {
   imports = [
     ../../modules/home-manager/fish.nix
+    ../../modules/home-manager/ghostty.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -168,10 +169,6 @@ in
   ];
 
   programs.qutebrowser = {
-    enable = true;
-  };
-
-  programs.ghostty = {
     enable = true;
   };
 
