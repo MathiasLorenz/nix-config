@@ -18,6 +18,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ../../modules/nixos/configuration.nix
+    ../../modules/nixos/fonts.nix
   ];
 
   # This value determines the NixOS release from which the default
