@@ -33,7 +33,7 @@
     }:
     {
       nixosConfigurations = {
-        desktop = nixpkgs.lib.nixosSystem rec {
+        claude = nixpkgs.lib.nixosSystem rec {
           system = "x86_64-linux";
           specialArgs = {
             inherit inputs;
@@ -42,7 +42,7 @@
             };
           };
           modules = [
-            ./hosts/desktop/configuration.nix
+            ./hosts/claude/configuration.nix
             nixos-hardware.nixosModules.common-cpu-amd
             nixos-hardware.nixosModules.common-cpu-amd-pstate
             nixos-hardware.nixosModules.common-cpu-amd-zenpower
@@ -55,7 +55,7 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.mlorenz = import ./hosts/desktop/home.nix;
+              home-manager.users.mlorenz = import ./hosts/claude/home.nix;
             }
           ];
         };

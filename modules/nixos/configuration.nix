@@ -12,7 +12,7 @@
   # use latest kernel version
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "desktop"; # Define your hostname.
+  networking.hostName = "claude"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary

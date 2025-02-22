@@ -7,7 +7,7 @@
 }:
 
 {
-  networking.hostName = "desktop";
+  networking.hostName = "claude";
 
   nix.settings.experimental-features = [
     "nix-command"
