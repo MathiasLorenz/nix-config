@@ -168,8 +168,15 @@ in
     # '')
   ];
 
-  programs.qutebrowser = {
-    enable = true;
+  programs = {
+    qutebrowser.enable = true;
+
+    nh = {
+      enable = true;
+      clean = {
+        enable = true;
+      };
+    };
   };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
