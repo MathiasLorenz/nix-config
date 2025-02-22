@@ -81,7 +81,7 @@
   users.users.mlorenz = {
     isNormalUser = true;
     description = "Mathias Lorenz";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
 
     # set default shell to bash, which launches fish
     # see: https://nixos.wiki/wiki/Fish
@@ -101,6 +101,11 @@
 
   # Install firefox.
   programs.firefox.enable = true;
+
+  # Docker, installs and enables docker daemon
+  virtualisation = {
+    docker.enable = true;
+  };
 
   # Using home-manager instead
   # List packages installed in system profile. To search, run:
