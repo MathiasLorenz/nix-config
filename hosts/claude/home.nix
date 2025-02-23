@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 let
   username = "mlorenz";
@@ -114,7 +114,7 @@ in
     rustup
     zig
     openblas
- 
+
     # Already bundled with pacman
     # git
 
@@ -125,7 +125,7 @@ in
     # dive
 
     # Currently I can't get sway to work with home-manager
-    # The problem is that wlroots can't launch as it is looking for 
+    # The problem is that wlroots can't launch as it is looking for
     # EGL extensions (OpenGL)
     # Should be fixable... For now sway can be installed with pacman/paru
     # nixGL https://github.com/nix-community/nixGL should definitly be able to solve the issue
@@ -182,19 +182,20 @@ in
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   # home.file = {
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".screenrc".source = dotfiles/screenrc;
+  # # Building this configuration will create a copy of 'dotfiles/screenrc' in
+  # # the Nix store. Activating the configuration will then make '~/.screenrc' a
+  # # symlink to the Nix store copy.
+  # ".screenrc".source = dotfiles/screenrc;
 
-    # # You can also set the file content immediately.
-    # ".gradle/gradle.properties".text = ''
-    #   org.gradle.console=verbose
-    #   org.gradle.daemon.idletimeout=3600000
-    # '';
+  # # You can also set the file content immediately.
+  # ".gradle/gradle.properties".text = ''
+  #   org.gradle.console=verbose
+  #   org.gradle.daemon.idletimeout=3600000
+  # '';
   # };
 
-  nixpkgs.config.allowUnfreePredicate = pkg:
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
     builtins.elem (pkgs.lib.getName pkg) [
       "slack"
       "1password"

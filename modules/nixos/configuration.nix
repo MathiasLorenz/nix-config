@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   # Bootloader.
@@ -81,7 +81,11 @@
   users.users.mlorenz = {
     isNormalUser = true;
     description = "Mathias Lorenz";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "docker"
+    ];
 
     # set default shell to bash, which launches fish
     # see: https://nixos.wiki/wiki/Fish
