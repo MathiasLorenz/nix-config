@@ -19,9 +19,6 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
-  # Enable networking
-  networking.networkmanager.enable = true;
-
   # Set your time zone.
   time.timeZone = "Europe/Copenhagen";
 
@@ -40,19 +37,12 @@
     LC_TIME = "da_DK.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  # You can disable this if you're only using the Wayland session.
-  services.xserver.enable = true;
-
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
     variant = "";
     options = "caps:swapescape";
   };
-
-  # Enable CUPS to print documents.
-  services.printing.enable = false;
 
   # Enable sound with pipewire.
   hardware.pulseaudio.enable = false;
@@ -102,11 +92,6 @@
   # Install firefox.
   programs.firefox.enable = true;
 
-  # Docker, installs and enables docker daemon
-  virtualisation = {
-    docker.enable = true;
-  };
-
   # Using home-manager instead
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -124,9 +109,6 @@
   # };
 
   # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

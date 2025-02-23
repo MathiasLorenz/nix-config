@@ -21,6 +21,7 @@
     ../../modules/nixos/fonts.nix
     ../../modules/nixos/neovim.nix
     ../../modules/nixos/plasma.nix
+    ../../modules/nixos/services.nix
   ];
 
   # This value determines the NixOS release from which the default
