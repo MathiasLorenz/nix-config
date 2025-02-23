@@ -13,9 +13,6 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
   # Using home-manager instead
   # List packages installed in system profile. To search, run:
   # $ nix search wget

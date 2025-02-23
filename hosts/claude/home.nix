@@ -8,6 +8,7 @@ in
   imports = [
     ../../modules/home-manager/fish.nix
     ../../modules/home-manager/ghostty.nix
+    ../../modules/home-manager/qutebrowser/qutebrowser.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -168,17 +169,6 @@ in
     # '')
   ];
 
-  programs = {
-    qutebrowser.enable = true;
-
-    nh = {
-      enable = true;
-      clean = {
-        enable = true;
-      };
-    };
-  };
-
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   # home.file = {
@@ -194,13 +184,6 @@ in
   # '';
   # };
 
-  nixpkgs.config.allowUnfreePredicate =
-    pkg:
-    builtins.elem (pkgs.lib.getName pkg) [
-      "slack"
-      "1password"
-      "1password-cli"
-    ];
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
   # shell provided by Home Manager. If you don't want to manage your shell
