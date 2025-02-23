@@ -19,6 +19,7 @@
     ./hardware-configuration.nix
     ../../modules/nixos/configuration.nix
     ../../modules/nixos/boot.nix
+    ../../modules/nixos/user.nix
     ../../modules/nixos/fonts.nix
     ../../modules/nixos/neovim.nix
     ../../modules/nixos/plasma.nix
