@@ -1,9 +1,10 @@
-{ pkgs, ... }:
+{
+  pkgs,
+  username,
+  fullname,
+  ...
+}:
 
-let
-  username = "mlorenz";
-  fullname = "Mathias Lorenz";
-in
 {
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.${username} = {

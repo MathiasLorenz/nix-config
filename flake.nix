@@ -31,15 +31,20 @@
       neovim-nightly-overlay,
       ...
     }:
+    let
+      system = "x86_64-linux";
+      username = "mlorenz";
+      fullname = "Mathias Lorenz";
+    in
     {
       nixosConfigurations = {
-        claude = nixpkgs.lib.nixosSystem rec {
-          system = "x86_64-linux";
+        claude = nixpkgs.lib.nixosSystem {
+          inherit system;
           specialArgs = {
             inherit inputs;
-            pkgs-unstable = import nixpkgs-unstable {
-              inherit system;
-            };
+            inherit username;
+            inherit fullname;
+            pkgs-unstable = import nixpkgs-unstable;
           };
           modules = [
             ./hosts/claude/configuration.nix
