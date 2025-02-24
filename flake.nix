@@ -60,7 +60,10 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.mlorenz = import ./hosts/claude/home.nix;
+              home-manager.users.${username} = import ./hosts/claude/home.nix;
+              home-manager.extraSpecialArgs = {
+                inherit username;
+              };
             }
           ];
         };

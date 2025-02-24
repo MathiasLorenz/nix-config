@@ -1,7 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, username, ... }:
 
 let
-  username = "mlorenz";
   homePath = "/home/${username}";
 in
 {
