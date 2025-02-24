@@ -1,9 +1,10 @@
 { ... }:
 {
   # import theme defined in separate file
-  imports = [
-    ./theme.nix
-  ];
+  # disabled for now as I like the default theme better
+  # imports = [
+  #   ./theme.nix
+  # ];
 
   programs.qutebrowser = {
     enable = true;
