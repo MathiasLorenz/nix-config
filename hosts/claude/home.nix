@@ -108,6 +108,9 @@ in
     # bitwarden-desktop # bitwarden in paru
     # _1password-cli
 
+    bitwarden-desktop
+    bitwarden-cli
+
     gcc
     lua5_1
     luarocks
