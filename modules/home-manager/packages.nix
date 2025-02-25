@@ -1,9 +1,21 @@
 { pkgs, ... }:
 {
+  programs = {
+    btop = {
+      enable = true;
+      settings = {
+        color_theme = "ayu";
+        theme_background = true;
+        vim_keys = true;
+        update_ms = 500;
+        proc_sorting = "cpu lazy";
+      };
+    };
+  };
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    btop
     zathura
     wl-clipboard
     wget
