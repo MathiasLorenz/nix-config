@@ -11,6 +11,25 @@
         proc_sorting = "cpu lazy";
       };
     };
+
+    bat = {
+      enable = true;
+      # Stolen from zanderhavgaard config
+      config = {
+        pager = "less -FR";
+        theme = "OneHalfDark";
+      };
+    };
+
+    # Fast tldr alternative
+    tealdeer = {
+      enable = true;
+      settings = {
+        updates = {
+          auto_update = true;
+        };
+      };
+    };
   };
 
   # The home.packages option allows you to install Nix packages into your
@@ -19,7 +38,6 @@
     zathura
     wl-clipboard
     wget
-    bat
     curl
     fastfetch
     fd
@@ -29,7 +47,6 @@
     ripgrep
     go-task
     gawk
-    tldr
     unzip
     nodejs_23
     magic-wormhole
