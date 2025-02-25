@@ -18,6 +18,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ../../modules/nixos/boot.nix
+    ../../modules/nixos/display-manager.nix
     ../../modules/nixos/user.nix
     ../../modules/nixos/audio.nix
     ../../modules/nixos/fonts.nix
