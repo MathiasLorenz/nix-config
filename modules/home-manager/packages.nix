@@ -44,6 +44,7 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
+    # CLI packages
     wget
     curl
     fastfetch
@@ -62,10 +63,11 @@
     nitch
     grc
     yazi
-
-    # rocm-cli for AMD gpus, see https://cgmb-rocm-docs.readthedocs.io/en/latest/ROCm_System_Managment/ROCm-SMI-CLI.html
     amdgpu_top
     patchelf
+    libnotify
+
+    # rocm-cli for AMD gpus, see https://cgmb-rocm-docs.readthedocs.io/en/latest/ROCm_System_Managment/ROCm-SMI-CLI.html
     # rocmPackages.rocm-smi
     # Installed with paru instead as 'llama.cpp-hip(-git)' which comes with all the extras for GPU support
     # The llama-cpp package is with CPU support only, so I'll build it from scratch instead
@@ -79,31 +81,22 @@
     # rocmPackages.rocprofiler
     # aocl-utils
 
+    # Screenshot/clipboard
     wl-clipboard
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
-
-    # Login manager
-    # Rememeber to disable other login managers if present
-    # On EndevourOS this is lightdm, so:
-    #   systemctl disable lightdm
-    #   systemctl enable ly
-    # and restart system (or stop/start the two services)
-    # ly # needs systemd stuff, installed with pacman instead
-    # NOTE: This actually breaks log in to xfce.... You can of course revert the above
-    # to remedy this
 
     # Using asdf-vm turned out to be a shit show, this worked surprisingly well
     # beamMinimal25Packages.elixir_1_17
     # wkhtmltopdf
 
+    # Graphical applications
     blueman
-
     pavucontrol # pulse audio volume control
-
-    # Bitwarden
     bitwarden-desktop
     bitwarden-cli
+    signal-desktop
+    slack
 
     # Compiler stuff
     gcc
