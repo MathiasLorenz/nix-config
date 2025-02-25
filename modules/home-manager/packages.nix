@@ -30,25 +30,28 @@
         };
       };
     };
+
+    zathura = {
+      enable = true;
+      options = {
+        selection-clipboard = "clipboard";
+        recolor-lightcolor = "#282C34";
+        recolor-darkcolor = "#efefef";
+      };
+    };
   };
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    zathura
-    wl-clipboard
     wget
     curl
     fastfetch
     fd
     ncdu
     vim
-    wl-clipboard
     ripgrep
     go-task
-    gawk
-    unzip
-    nodejs_23
     magic-wormhole
     brightnessctl # Backlight control
     traceroute
@@ -59,8 +62,6 @@
     nitch
     grc
     yazi
-    valgrind
-    gdb
 
     # rocm-cli for AMD gpus, see https://cgmb-rocm-docs.readthedocs.io/en/latest/ROCm_System_Managment/ROCm-SMI-CLI.html
     amdgpu_top
@@ -78,6 +79,7 @@
     # rocmPackages.rocprofiler
     # aocl-utils
 
+    wl-clipboard
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
 
@@ -99,16 +101,19 @@
 
     pavucontrol # pulse audio volume control
 
+    # Bitwarden
     bitwarden-desktop
     bitwarden-cli
 
+    # Compiler stuff
     gcc
     lua5_1
     luarocks
     uv
     rustup
     zig
-    openblas
+    valgrind
+    gdb
 
     # Currently I can't get sway to work with home-manager
     # The problem is that wlroots can't launch as it is looking for
@@ -129,8 +134,8 @@
     # mako
     # swayimg
 
+    # Git stuff
     gh
-    hub
     lazygit
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
