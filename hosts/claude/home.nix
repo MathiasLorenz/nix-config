@@ -9,6 +9,7 @@ in
     ../../modules/home-manager/ghostty.nix
     ../../modules/home-manager/qutebrowser/qutebrowser.nix
     ../../modules/home-manager/git.nix
+    ../../modules/home-manager/fuzzel.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
