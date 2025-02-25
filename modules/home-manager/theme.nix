@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   # All is stolen from zanderhavgaard config
+  # Somehow this breaks log in to KDE Plasma Wayland (X11 still works)
   gtk = {
     enable = true;
 

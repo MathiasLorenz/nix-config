@@ -2,6 +2,9 @@
 { ... }:
 {
   services = {
+    # display manager is set using separate nix module
+    # see display-manager.nix
+
     desktopManager = {
       plasma6 = {
         enable = true;
