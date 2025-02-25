@@ -8,6 +8,7 @@ in
     ../../modules/home-manager/fish.nix
     ../../modules/home-manager/ghostty.nix
     ../../modules/home-manager/qutebrowser/qutebrowser.nix
+    ../../modules/home-manager/git.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -117,15 +118,6 @@ in
     rustup
     zig
     openblas
-
-    # Already bundled with pacman
-    # git
-
-    # This does not work currently :(
-    # containerd
-    # docker
-    # docker-buildx
-    # dive
 
     # Currently I can't get sway to work with home-manager
     # The problem is that wlroots can't launch as it is looking for

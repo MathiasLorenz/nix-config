@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, username, ... }:
 {
   programs = {
     firefox.enable = true;
@@ -8,6 +8,12 @@
       clean = {
         enable = true;
       };
+    };
+
+    _1password.enable = true; # cli
+    _1password-gui = {
+      enable = true;
+      polkitPolicyOwners = [ username ];
     };
   };
 
