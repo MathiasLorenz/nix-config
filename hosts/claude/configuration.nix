@@ -27,6 +27,7 @@
     ../../modules/nixos/services.nix
     ../../modules/nixos/programs.nix
     ../../modules/nixos/sway.nix
+    ../../modules/nixos/bluetooth.nix
   ];
 
   # OpenCL support with ROCm
