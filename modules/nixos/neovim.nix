@@ -43,7 +43,6 @@
     # lsp/linters/etc.
     bash-language-server
     black
-    python3Packages.debugpy
     docker-compose-language-service
     dockerfile-language-server-nodejs
     hadolint
@@ -57,9 +56,14 @@
     nixd
     nixfmt-rfc-style
     nodePackages.prettier
+
+    # python
+    python3Packages.debugpy
+    python312Packages.python-lsp-server
     pyright
     basedpyright
     ruff
+
     shellcheck
     shfmt
     sqlfluff
@@ -70,5 +74,8 @@
     terraform-ls
     tflint
     yaml-language-server
+
+    # elixir
+    # lexical
   ];
 }

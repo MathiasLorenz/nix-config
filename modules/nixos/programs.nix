@@ -25,5 +25,4 @@
       "1password-cli"
       "widevine-cdm"
     ];
-
 }
