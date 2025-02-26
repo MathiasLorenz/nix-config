@@ -23,6 +23,7 @@
       "slack"
       "1password"
       "1password-cli"
+      "widevine-cdm"
     ];
 
 }
