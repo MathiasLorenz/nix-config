@@ -5,5 +5,5 @@
 
   powerManagement.enable = true;
 
-  # enable tlp...
+  # enable tlp... see https://nixos.wiki/wiki/Laptop
 }
