@@ -14,6 +14,8 @@
       "networkmanager"
       "wheel"
       "docker"
+      "video"
+      "audio"
     ];
 
     # set default shell to bash, which launches fish
