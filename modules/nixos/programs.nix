@@ -22,6 +22,7 @@
     beam.packages.erlang_25.erlang
     beam.packages.erlang_25.elixir_1_18
     wkhtmltopdf
+    inotify-tools
   ];
 
   nixpkgs.config.allowUnfreePredicate =
