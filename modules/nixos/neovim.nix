@@ -76,6 +76,7 @@
     yaml-language-server
 
     # elixir
+    beam.packages.erlang_25.elixir-ls
     # lexical
   ];
 }

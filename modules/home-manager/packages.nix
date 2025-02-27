@@ -66,6 +66,7 @@
     amdgpu_top
     patchelf
     libnotify
+    gnumake
 
     # rocm-cli for AMD gpus, see https://cgmb-rocm-docs.readthedocs.io/en/latest/ROCm_System_Managment/ROCm-SMI-CLI.html
     # rocmPackages.rocm-smi
