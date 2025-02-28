@@ -296,6 +296,7 @@ focus_wrapping no
 # I killed the default config for sway-bar, maybe I'll rip myself here
 
 ### Notification manager
-exec mako
+# enabled in home-manager
+# exec mako
 
 include /etc/sway/config.d/*
