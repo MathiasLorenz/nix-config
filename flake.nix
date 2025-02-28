@@ -67,6 +67,30 @@
             }
           ];
         };
+        terry = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = {
+            inherit inputs;
+            inherit username;
+            inherit fullname;
+            pkgs-unstable = import nixpkgs-unstable;
+          };
+          modules = [
+            ./hosts/terry/configuration.nix
+            nixos-hardware.nixosModules.framework-13-7040-amd
+
+            # setup home-manager as a module
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.${username} = import ./hosts/terry/home.nix;
+              home-manager.extraSpecialArgs = {
+                inherit username;
+              };
+            }
+          ];
+        };
       };
     };
 }
