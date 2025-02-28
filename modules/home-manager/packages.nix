@@ -67,6 +67,9 @@
     patchelf
     gnumake
 
+    # Work stuff, could be its own nix file
+    tenv
+
     # rocm-cli for AMD gpus, see https://cgmb-rocm-docs.readthedocs.io/en/latest/ROCm_System_Managment/ROCm-SMI-CLI.html
     # rocmPackages.rocm-smi
     # Installed with paru instead as 'llama.cpp-hip(-git)' which comes with all the extras for GPU support
