@@ -60,7 +60,7 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.${username} = import ./hosts/claude/home.nix;
+              home-manager.users.${username} = import ./modules/home-manager/home.nix;
               home-manager.extraSpecialArgs = {
                 inherit username;
               };
@@ -84,7 +84,7 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.${username} = import ./hosts/terry/home.nix;
+              home-manager.users.${username} = import ./modules/home-manager/home.nix;
               home-manager.extraSpecialArgs = {
                 inherit username;
               };
