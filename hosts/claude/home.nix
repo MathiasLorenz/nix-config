@@ -10,7 +10,6 @@ in
     ../../modules/home-manager/ghostty.nix
     ../../modules/home-manager/qutebrowser.nix
     ../../modules/home-manager/git.nix
-    ../../modules/home-manager/fuzzel.nix
     ../../modules/home-manager/sway.nix
     ../../modules/home-manager/waybar.nix
   ];
