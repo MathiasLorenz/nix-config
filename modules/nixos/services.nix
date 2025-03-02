@@ -30,6 +30,13 @@
 
     # start keyring
     gnome.gnome-keyring.enable = true;
+
+    # locate/mlocate functionality
+    locate = {
+      enable = true;
+      # Update database on an interval
+      interval = "hourly";
+    };
   };
 
 }
