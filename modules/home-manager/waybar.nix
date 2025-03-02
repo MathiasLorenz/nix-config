@@ -29,6 +29,7 @@
           "network"
           "backlight"
           "battery#bat0"
+          "battery#bat1"
           "bluetooth"
           "clock"
           "idle_inhibitor"
@@ -95,6 +96,25 @@
 
         "battery#bat0" = {
           bat = "BAT0";
+          states = {
+            warning = 30;
+            critical = 15;
+          };
+          format = "BAT0:{capacity}% {icon}";
+          format-charging = "BAT0:{capacity}% 󱐋";
+          format-plugged = "BAT0:{capacity}% ";
+          format-alt = "BAT0:{time} {icon}";
+          format-icons = [
+            ""
+            ""
+            ""
+            ""
+            ""
+          ];
+        };
+
+        "battery#bat1" = {
+          bat = "BAT1";
           states = {
             warning = 30;
             critical = 15;
