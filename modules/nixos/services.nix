@@ -24,10 +24,6 @@
     # ssh server
     openssh.enable = true;
 
-    # power profile daemon
-    # TODO: configure
-    # power-profiles-daemon.enable = false;
-
     # start keyring
     gnome.gnome-keyring.enable = true;
 
@@ -38,5 +34,4 @@
       interval = "hourly";
     };
   };
-
 }
