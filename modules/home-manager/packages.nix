@@ -65,8 +65,6 @@
     yazi
     amdgpu_top
     patchelf
-    gnumake
-    cmake
 
     # Work stuff, could be its own nix file
     tenv
@@ -85,6 +83,9 @@
     rustup
     zig
     valgrind
+    gnumake
+    cmake
+    ccache
     gdb
 
     # Git stuff
