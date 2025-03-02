@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   # All is stolen from zanderhavgaard config
-  # Somehow this breaks log in to KDE Plasma Wayland (X11 still works)
+  # This does break log in to Plasma Wayland...
   gtk = {
     enable = true;
 
@@ -32,11 +32,12 @@
 
   dconf = {
     enable = true;
-    settings = {
-      "org/gnome/desktop/interface" = {
-        color-scheme = "prefer-dark";
-      };
-    };
+    # Not sure I have anything gnome related installed so I'll leave this out for now
+    # settings = {
+    #   "org/gnome/desktop/interface" = {
+    #     color-scheme = "prefer-dark";
+    #   };
+    # };
   };
 
   qt = {
