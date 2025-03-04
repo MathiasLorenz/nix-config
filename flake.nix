@@ -1,14 +1,14 @@
 {
-  description = "Nixos with flakes experiment";
+  description = "Nixos with flakes";
 
   inputs = {
+    # setup unstable nixpkgs as default
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
     # setup stable nixpkgs
     # see https://nixos-and-flakes.thiscute.world/nixos-with-flakes/downgrade-or-upgrade-packages
+    # for how to use stable branch if needed
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.11";
-
-    # setup unstable nixpkgs
-    # make this the default package repo
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # setup home-manager
     home-manager = {
