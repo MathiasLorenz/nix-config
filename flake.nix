@@ -3,14 +3,16 @@
 
   inputs = {
     # setup stable nixpkgs
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    # see https://nixos-and-flakes.thiscute.world/nixos-with-flakes/downgrade-or-upgrade-packages
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.11";
 
     # setup unstable nixpkgs
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    # make this the default package repo
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # setup home-manager
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.11";
+      url = "github:nix-community/home-manager";
       # make home-manager use the same nixpkgs as the flake
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -25,7 +27,7 @@
   outputs =
     inputs@{
       nixpkgs,
-      nixpkgs-unstable,
+      nixpkgs-stable,
       home-manager,
       nixos-hardware,
       neovim-nightly-overlay,
@@ -44,7 +46,7 @@
             inherit inputs;
             inherit username;
             inherit fullname;
-            pkgs-unstable = import nixpkgs-unstable;
+            pkgs-stable = import nixpkgs-stable;
           };
           modules = [
             ./hosts/claude/configuration.nix
@@ -73,7 +75,7 @@
             inherit inputs;
             inherit username;
             inherit fullname;
-            pkgs-unstable = import nixpkgs-unstable;
+            pkgs-stable = import nixpkgs-stable;
           };
           modules = [
             ./hosts/terry/configuration.nix
