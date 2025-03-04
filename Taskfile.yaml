@@ -29,4 +29,17 @@ tasks:
 
   build:
     cmds:
-      - sudo nixos-rebuild build --flake . 
+      - sudo nixos-rebuild build --flake .
+
+  clean-garbage:
+    cmds:
+      - nix-collect-garbage
+
+  clean-generations:
+    cmds:
+      - nh clean user -k 3
+
+  clean:
+    cmds:
+      - task: clean-garbage
+      - task: clean-generations
