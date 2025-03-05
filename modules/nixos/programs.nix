@@ -19,8 +19,8 @@
 
   environment.systemPackages = with pkgs; [
     # Elixir/Erlang. LSP is installed in neovim module
-    beam.packages.erlang_25.erlang
-    beam.packages.erlang_25.elixir_1_18
+    # beam.packages.erlang_25.erlang
+    beam.packages.erlang_25.elixir_1_17
     wkhtmltopdf
     inotify-tools
   ];
