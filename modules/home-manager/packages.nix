@@ -39,6 +39,20 @@
         recolor-darkcolor = "#efefef";
       };
     };
+
+    firefox = {
+      enable = true;
+    };
+
+    chromium = {
+      enable = true;
+      commandLineArgs = [
+        "--enable-features=AcceleratedVideoDecodeLinuxZeroCopyGL,AcceleratedVideoDecodeLinuxGL,VaapiIgnoreDriverChecks"
+        "--ignore-gpu-blocklist"
+        "--enable-zero-copy"
+        "--ozone-platform-hint=auto"
+      ];
+    };
   };
 
   # The home.packages option allows you to install Nix packages into your

@@ -35,7 +35,13 @@
 
       qt = {
         highdpi = true;
-        args = [ "enable-features=VaapiVideoDecodeLinuxGL" ];
+        # Trying to get hardware acceleration to work - not succeeding :sad-panda:
+        args = [
+          "enable-features=VaapiVideoDecodeLinuxGL,AcceleratedVideoDecodeLinuxZeroCopyGL,AcceleratedVideoDecodeLinuxGL,VaapiIgnoreDriverChecks"
+          "ignore-gpu-blacklist"
+          "enable-gpu-rasterization"
+          "enable-accelerated-video-decode"
+        ];
       };
 
       zoom.default = 120;

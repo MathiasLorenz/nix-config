@@ -1,8 +1,6 @@
 { pkgs, username, ... }:
 {
   programs = {
-    firefox.enable = true;
-
     nh = {
       enable = true;
       clean = {
