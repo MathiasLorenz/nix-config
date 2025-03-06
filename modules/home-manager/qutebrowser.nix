@@ -52,5 +52,10 @@
         "tss" = "set tabs.show switching";
       };
     };
+
+    # This loads settings configured via the GUI, which seems weird, but
+    # e.g. permissions from the GUI (when you accept a page can open mail links etc)
+    # are present in the auto config.
+    loadAutoconfig = true;
   };
 }
