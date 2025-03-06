@@ -84,6 +84,10 @@
     # Work stuff, could be its own nix file
     tenv
     postgresql_17_jit # Dunno why an non-jit version wasn't available for psql 17
+    # Elixir/Erlang. LSP is installed in neovim module
+    beam.packages.erlang_25.elixir_1_17
+    wkhtmltopdf
+    inotify-tools
 
     # Graphical applications
     bitwarden-desktop
