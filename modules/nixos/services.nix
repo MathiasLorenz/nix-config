@@ -2,7 +2,8 @@
 {
   networking = {
     networkmanager.enable = true;
-    firewall.enable = true;
+    # Disabling for chromecast
+    firewall.enable = false;
     nftables.enable = true;
   };
 
