@@ -30,6 +30,7 @@
     ../../modules/nixos/bluetooth.nix
     ../../modules/nixos/qutebrowser.nix
     ../../modules/nixos/laptop.nix
+    ../../modules/nixos/chromium.nix
   ];
 
   # OpenCL support with ROCm
