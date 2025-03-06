@@ -69,6 +69,7 @@
 
     # Work stuff, could be its own nix file
     tenv
+    postgresql_17_jit # Dunno why an non-jit version wasn't available for psql 17
 
     # Graphical applications
     bitwarden-desktop
