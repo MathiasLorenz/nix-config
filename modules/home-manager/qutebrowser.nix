@@ -16,10 +16,14 @@
         show_switching_delay = 2500;
       };
 
+      # https://qutebrowser.org/FAQ.html subsection about dark mode
       colors = {
         webpage = {
+          # One way of enabling dark mode, relies on pages shipping dark color scheme css
+          preferred_color_scheme = "dark";
+          # Turn darkmode on for the underlying chromium browser
           darkmode = {
-            enabled = true;
+            enabled = false;
             policy = {
               images = "smart";
             };
