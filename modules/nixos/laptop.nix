@@ -8,7 +8,10 @@
     power-profiles-daemon.enable = true;
   };
 
-  powerManagement.enable = true;
+  powerManagement = {
+    enable = true;
+    powertop.enable = true;
+  };
 
   # enable tlp... see https://nixos.wiki/wiki/Laptop
 }
