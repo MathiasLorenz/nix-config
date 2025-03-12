@@ -34,7 +34,7 @@
   programs.starship = {
     enable = true;
     enableFishIntegration = true;
-    enableTransience = true;
+    enableTransience = false; # Could not really get used to this
   };
 
   programs.fish = {
