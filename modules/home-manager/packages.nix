@@ -51,6 +51,7 @@
         "--ignore-gpu-blocklist"
         "--enable-zero-copy"
         "--ozone-platform-hint=auto"
+        "--use-angle=vulkan" # This makes hardware decode work on my desktop
       ];
     };
   };
