@@ -23,7 +23,6 @@
     ../../modules/nixos/audio.nix
     ../../modules/nixos/fonts.nix
     ../../modules/nixos/neovim.nix
-    ../../modules/nixos/plasma.nix
     ../../modules/nixos/services.nix
     ../../modules/nixos/programs.nix
     ../../modules/nixos/sway.nix
