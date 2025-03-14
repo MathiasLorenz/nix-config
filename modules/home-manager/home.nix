@@ -8,6 +8,7 @@ in
     ../../modules/home-manager/packages.nix
     ../../modules/home-manager/fish.nix
     ../../modules/home-manager/ghostty.nix
+    ../../modules/home-manager/kitty.nix
     ../../modules/home-manager/qutebrowser.nix
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/theme.nix
