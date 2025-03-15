@@ -44,4 +44,15 @@
     enable = true;
     platformTheme.name = "gtk";
   };
+
+  # Doesn't really work...
+  home.pointerCursor = {
+    enable = true;
+    gtk.enable = true;
+    sway.enable = true;
+
+    name = "capitaine-cursors";
+    package = pkgs.capitaine-cursors;
+    size = 24;
+  };
 }
