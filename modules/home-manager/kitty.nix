@@ -9,6 +9,8 @@
     };
 
     font.name = "Hack Nerd Font";
+    font.size = 11;
+
     # themeFile = "OneDark-Pro";
     themeFile = "Dracula";
   };
