@@ -80,7 +80,6 @@
     yazi
     amdgpu_top
     patchelf
-    llama-cpp
 
     # Work stuff, could be its own nix file
     tenv
