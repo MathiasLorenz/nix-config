@@ -25,4 +25,19 @@
     # themeFile = "OneDark-Pro";
     themeFile = "Dracula";
   };
+
+  programs.foot = {
+    enable = true;
+
+    settings = {
+      main = {
+        font = "Hack Nerd Font:size=10";
+        dpi-aware = "yes";
+      };
+
+      mouse = {
+        hide-when-typing = "yes";
+      };
+    };
+  };
 }
