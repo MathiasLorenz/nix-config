@@ -39,7 +39,12 @@ tasks:
     cmds:
       - nh clean user -k 3
 
+  clean-optimise:
+    cmds:
+      - nix-store --optimise
+
   clean:
     cmds:
       - task: clean-garbage
+      - task: clean-optimise
       - task: clean-generations
