@@ -94,6 +94,7 @@
     bitwarden-cli
     signal-desktop
     slack
+    teams-for-linux
 
     # Compiler stuff
     gcc
