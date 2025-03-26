@@ -54,7 +54,7 @@ input "1189:32774:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse" {
 # The size of the screen and the distance does require a bit of scaling currently :(
 output DP-2 {
   mode 3840x2160@143.998Hz
-  scale 1.15
+  scale 1.0
 }
 
 # frame.work laptop screen
