@@ -52,7 +52,8 @@
             ./hosts/claude/configuration.nix
             nixos-hardware.nixosModules.common-cpu-amd
             nixos-hardware.nixosModules.common-cpu-amd-pstate
-            nixos-hardware.nixosModules.common-cpu-amd-zenpower
+            # This crashes on build with kernel 6.14, let's try again soon
+            # nixos-hardware.nixosModules.common-cpu-amd-zenpower
             nixos-hardware.nixosModules.common-gpu-amd
             nixos-hardware.nixosModules.common-pc
             nixos-hardware.nixosModules.common-pc-ssd
