@@ -80,6 +80,7 @@
     yazi
     amdgpu_top
     patchelf
+    ipcalc
 
     # Work stuff, could be its own nix file
     tenv
