@@ -9,6 +9,7 @@
         vim_keys = true;
         update_ms = 500;
         proc_sorting = "cpu lazy";
+        proc_tree = true;
       };
     };
 
