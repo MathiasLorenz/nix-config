@@ -94,6 +94,8 @@
       ping = "prettyping --nolegend";
       hm = "home-manager";
       ff = "fastfetch";
+      nhb = "nh os build .";
+      nhs = "nh os switch .";
 
       # cat = "bat";
       # docker
