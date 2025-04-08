@@ -37,6 +37,7 @@
       system = "x86_64-linux";
       username = "mlorenz";
       fullname = "Mathias Lorenz";
+      pkgs-stable = import nixpkgs-stable { inherit system; };
     in
     {
       nixosConfigurations = {
@@ -46,7 +47,7 @@
             inherit inputs;
             inherit username;
             inherit fullname;
-            pkgs-stable = import nixpkgs-stable;
+            inherit pkgs-stable;
           };
           modules = [
             ./hosts/claude/configuration.nix
@@ -66,6 +67,7 @@
               home-manager.users.${username} = import ./modules/home-manager/home.nix;
               home-manager.extraSpecialArgs = {
                 inherit username;
+                inherit pkgs-stable;
               };
             }
           ];
@@ -76,7 +78,7 @@
             inherit inputs;
             inherit username;
             inherit fullname;
-            pkgs-stable = import nixpkgs-stable;
+            inherit pkgs-stable;
           };
           modules = [
             ./hosts/terry/configuration.nix
@@ -90,6 +92,7 @@
               home-manager.users.${username} = import ./modules/home-manager/home.nix;
               home-manager.extraSpecialArgs = {
                 inherit username;
+                inherit pkgs-stable;
               };
             }
           ];
