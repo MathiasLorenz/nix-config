@@ -82,6 +82,7 @@
     amdgpu_top
     patchelf
     ipcalc
+    whois
 
     # Work stuff, could be its own nix file
     tenv
