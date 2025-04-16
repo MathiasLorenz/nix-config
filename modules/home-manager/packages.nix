@@ -96,7 +96,7 @@
     # Graphical applications
     bitwarden-desktop
     bitwarden-cli
-    signal-desktop
+    signal-desktop-bin
     slack
     teams-for-linux
 
