@@ -83,6 +83,7 @@
     patchelf
     ipcalc
     whois
+    nix-tree
 
     # Work stuff, could be its own nix file
     tenv
