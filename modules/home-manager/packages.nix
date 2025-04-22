@@ -93,6 +93,7 @@
     # beam.packages.erlang_25.elixir_1_17
     wkhtmltopdf
     inotify-tools
+    google-cloud-sdk
 
     # Graphical applications
     bitwarden-desktop

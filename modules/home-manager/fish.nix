@@ -35,6 +35,9 @@
     enable = true;
     enableFishIntegration = true;
     enableTransience = false; # Could not really get used to this
+    settings = {
+      gcloud.disabled = true;
+    };
   };
 
   programs.fish = {
