@@ -85,6 +85,8 @@
     whois
     nix-tree
     unzip
+    glow # cli markdown tool
+    pdfgrep
 
     # Work stuff, could be its own nix file
     tenv
