@@ -84,6 +84,7 @@
     ipcalc
     whois
     nix-tree
+    unzip
 
     # Work stuff, could be its own nix file
     tenv
