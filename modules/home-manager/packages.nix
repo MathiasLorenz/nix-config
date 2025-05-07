@@ -87,6 +87,7 @@
     unzip
     glow # cli markdown tool
     pdfgrep
+    bitwarden-cli
 
     # Work stuff, could be its own nix file
     tenv
@@ -100,7 +101,6 @@
 
     # Graphical applications
     bitwarden-desktop
-    bitwarden-cli
     signal-desktop-bin
     slack
     teams-for-linux
