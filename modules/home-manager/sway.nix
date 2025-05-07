@@ -10,9 +10,11 @@
 
   services.mako = {
     enable = true;
-    font = "Hack Nerd Font 12";
-    defaultTimeout = 30000;
-    ignoreTimeout = true;
+    settings = {
+      font = "Hack Nerd Font 12";
+      defaultTimeout = 30000;
+      ignoreTimeout = true;
+    };
   };
 
   # https://mark.stosberg.com/fuzzel-a-great-dmenu-and-rofi-altenrative-for-wayland/
