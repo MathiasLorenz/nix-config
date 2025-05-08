@@ -88,6 +88,7 @@
     glow # cli markdown tool
     pdfgrep
     bitwarden-cli
+    dive
 
     # Work stuff, could be its own nix file
     tenv
