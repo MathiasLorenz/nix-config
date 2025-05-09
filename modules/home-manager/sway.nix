@@ -12,8 +12,8 @@
     enable = true;
     settings = {
       font = "Hack Nerd Font 12";
-      defaultTimeout = 30000;
-      ignoreTimeout = true;
+      default-timeout = 25000;
+      ignore-timeout = true;
     };
   };
 
