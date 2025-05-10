@@ -105,6 +105,8 @@
     signal-desktop-bin
     slack
     teams-for-linux
+    qbittorrent
+    vlc
 
     # Compiler stuff
     gcc
