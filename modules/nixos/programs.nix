@@ -22,7 +22,5 @@
       "1password"
       "1password-cli"
       "widevine-cdm"
-      "chromium"
-      "chromium-unwrapped"
     ];
 }

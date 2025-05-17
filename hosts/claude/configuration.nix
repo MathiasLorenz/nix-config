@@ -28,7 +28,6 @@
     ../../modules/nixos/sway.nix
     ../../modules/nixos/bluetooth.nix
     ../../modules/nixos/qutebrowser.nix
-    ../../modules/nixos/chromium.nix
     ../../modules/nixos/env-variables.nix
   ];
 
