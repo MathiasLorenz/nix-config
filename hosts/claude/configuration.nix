@@ -29,6 +29,7 @@
     ../../modules/nixos/bluetooth.nix
     ../../modules/nixos/qutebrowser.nix
     ../../modules/nixos/env-variables.nix
+    ../../modules/nixos/steam.nix
   ];
 
   # OpenCL support with ROCm

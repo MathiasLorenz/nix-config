@@ -22,5 +22,7 @@
       "1password"
       "1password-cli"
       "widevine-cdm"
+      "steam"
+      "steam-unwrapped"
     ];
 }
