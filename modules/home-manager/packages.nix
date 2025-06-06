@@ -111,7 +111,6 @@
     gdb
 
     # Git stuff
-    gh
     lazygit
 
     # Stable shit
