@@ -56,6 +56,7 @@
     nixd
     nixfmt-rfc-style
     nodePackages.prettier
+    zls
 
     # python
     python3Packages.debugpy
