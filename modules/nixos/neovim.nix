@@ -77,8 +77,7 @@
     yaml-language-server
 
     # elixir
-    # This should be Erlang 25, but an upstream update broke the package, so I am switching to 26 for elixir-ls...
-    beam.packages.erlang_26.elixir-ls
+    beam.packages.erlang_27.elixir-ls
     lexical # I can't find lexical in the beam.packages .. place
   ];
 
