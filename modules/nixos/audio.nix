@@ -17,6 +17,7 @@
           "default.clock.allowed-rates" = [
             44100
             48000
+            88200
             96000
             192000
           ];
