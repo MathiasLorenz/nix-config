@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs-stable, ... }:
 {
   # import theme defined in separate file
   # disabled for now as I like the default theme better
@@ -8,6 +8,7 @@
 
   programs.qutebrowser = {
     enable = true;
+    package = pkgs-stable.qutebrowser;
 
     settings = {
       tabs = {
