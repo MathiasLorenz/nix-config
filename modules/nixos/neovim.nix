@@ -33,7 +33,6 @@
     viu
     chafa
     nodejs
-    python3
     cargo
     lazygit
     ripgrep
@@ -61,6 +60,7 @@
     # python
     python3Packages.debugpy
     python312Packages.python-lsp-server
+    python3
     pyright
     basedpyright
     ruff

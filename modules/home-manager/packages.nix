@@ -86,6 +86,7 @@
     wkhtmltopdf
     inotify-tools
     google-cloud-sdk
+    python312
 
     # Graphical applications
     bitwarden-desktop
