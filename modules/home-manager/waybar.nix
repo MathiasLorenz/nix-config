@@ -144,38 +144,38 @@
             "{device_alias}\t{device_address}\t{device_battery_percentage}%";
           "on-click" = "blueman-manager";
         };
-      };
 
-      network = {
-        "format-wifi" = "";
-        "format-ethernet" = "{ipaddr}/{cidr} 󰈁";
-        "tooltip-format" = "{essid} ({signalStrength}%); {gwaddr} via {ifname} 󰈀 ";
-        "format-linked" = "{ifname} (No IP) 󰈂";
-        "format-disconnected" = "Disconnected ⚠";
-        "format-alt" = "{ifname}: {ipaddr}/{cidr}";
-      };
-
-      pulseaudio = {
-        format = "{volume}% {icon} {format_source}";
-        format-bluetooth = "{volume}% {icon} {format_source}";
-        format-bluetooth-muted = "󰖁 {icon} {format_source}";
-        format-muted = "󰖁 {format_source}";
-        format-source = "{volume}% ";
-        format-source-muted = "";
-        format-icons = {
-          headphone = "";
-          hands-free = "hands-free";
-          headset = "headset";
-          phone = "";
-          portable = "";
-          car = "";
-          default = [
-            ""
-            ""
-            ""
-          ];
+        network = {
+          "format-wifi" = "";
+          "format-ethernet" = "{ipaddr}/{cidr} 󰈁";
+          "tooltip-format" = "{essid} ({signalStrength}%); {gwaddr} via {ifname} 󰈀 ";
+          "format-linked" = "{ifname} (No IP) 󰈂";
+          "format-disconnected" = "Disconnected ⚠";
+          "format-alt" = "{ifname}: {ipaddr}/{cidr}";
         };
-        on-click = "pavucontrol";
+
+        pulseaudio = {
+          format = "{volume}% {icon} {format_source}";
+          format-bluetooth = "{volume}% {icon} {format_source}";
+          format-bluetooth-muted = "󰖁 {icon} {format_source}";
+          format-muted = "󰖁 {format_source}";
+          format-source = "{volume}% ";
+          format-source-muted = "";
+          format-icons = {
+            headphone = "";
+            hands-free = "hands-free";
+            headset = "headset";
+            phone = "";
+            portable = "";
+            car = "";
+            default = [
+              ""
+              ""
+              ""
+            ];
+          };
+          on-click = "pavucontrol";
+        };
       };
     };
   };
