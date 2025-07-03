@@ -16,6 +16,7 @@
       "docker"
       "video"
       "audio"
+      "input"
     ];
 
     # set default shell to bash, which launches fish
@@ -59,4 +60,8 @@
     options = "caps:swapescape";
   };
 
+  # To enable waybar to get keyboard events for waybar-keybard-state
+  services.udev.extraRules = ''
+    KERNEL=="event*", NAME="input/%k", MODE="660", GROUP="input"
+  '';
 }

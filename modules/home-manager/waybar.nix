@@ -69,7 +69,7 @@
           "format" = "{used:0.1f}G/{total:0.1f}G ";
         };
 
-        "sway/langauge" = {
+        "sway/language" = {
           "format" = "{shortDescription} {flag}";
           "tooltip" = false;
         };
@@ -92,6 +92,19 @@
             ""
             ""
           ];
+        };
+
+        # Does not work properly with remapped keys
+        "keyboard-state" = {
+          capslock = true;
+          format = "{icon}";
+          format-icons = {
+            # locked = "";
+            # unlocked = "";
+            locked = "CAPS";
+            unlocked = "no caps";
+          };
+          empty = false;
         };
 
         "battery#bat0" = {
