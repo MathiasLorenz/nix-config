@@ -87,6 +87,7 @@
     inotify-tools
     google-cloud-sdk
     python312
+    postman
 
     # Graphical applications
     bitwarden-desktop

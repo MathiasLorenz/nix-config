@@ -24,5 +24,6 @@
       "widevine-cdm"
       "steam"
       "steam-unwrapped"
+      "postman"
     ];
 }
