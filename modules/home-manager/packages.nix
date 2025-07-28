@@ -1,4 +1,12 @@
 { pkgs, ... }:
+let
+  google-cloud-sdk-with-gke-auth = pkgs.google-cloud-sdk.withExtraComponents (
+    with pkgs.google-cloud-sdk.components;
+    [
+      gke-gcloud-auth-plugin
+    ]
+  );
+in
 {
   programs = {
     btop = {
@@ -85,9 +93,11 @@
     beam.packages.erlang_27.elixir_1_18
     wkhtmltopdf
     inotify-tools
-    google-cloud-sdk
     python312
     postman
+    kubectl
+    k9s
+    google-cloud-sdk-with-gke-auth
 
     # Graphical applications
     bitwarden-desktop
