@@ -99,6 +99,7 @@
       nhb = "nh os build .";
       nhs = "nh os switch .";
       nfu = "nix flake update";
+      ns = "nix-shell";
 
       # cat = "bat";
       # docker
