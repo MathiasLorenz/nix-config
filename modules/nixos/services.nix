@@ -71,8 +71,15 @@
     };
 
     netbird = {
-      enable = true;
       ui.enable = true;
+
+      clients.default = {
+        port = 51820;
+        name = "netbird";
+        interface = "wt0";
+        hardened = false;
+        autoStart = false;
+      };
     };
   };
 }
