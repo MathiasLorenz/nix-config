@@ -96,6 +96,7 @@ in
     python312
     postman
     kubectl
+    kubectl-cnpg
     k9s
     google-cloud-sdk-with-gke-auth
 
