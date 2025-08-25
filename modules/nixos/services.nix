@@ -62,10 +62,9 @@
 
         # You can choose a specific set of servers from https://github.com/DNSCrypt/dnscrypt-resolvers/blob/master/v3/public-resolvers.md
         server_names = [
+          # "mullvad-base-doh"
           "mullvad-doh"
           "njalla-doh"
-          # Doesn't work :shrug:
-          # "noads.joindns4.eu/dns-query"
         ];
       };
     };
