@@ -50,7 +50,7 @@
         ipv6_servers = true;
         require_dnssec = true;
         # Add this to test if dnscrypt-proxy is actually used to resolve DNS requests
-        query_log.file = "/var/log/dnscrypt-proxy/query.log";
+        # query_log.file = "/var/log/dnscrypt-proxy/query.log";
         sources.public-resolvers = {
           urls = [
             "https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md"
