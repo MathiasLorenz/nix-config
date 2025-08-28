@@ -86,6 +86,7 @@ in
     pdfgrep
     bitwarden-cli
     dive
+    hydra-check
 
     # Work stuff, could be its own nix file
     tenv
@@ -99,6 +100,7 @@ in
     kubectl-cnpg
     k9s
     google-cloud-sdk-with-gke-auth
+    mbpoll
 
     # Graphical applications
     bitwarden-desktop
