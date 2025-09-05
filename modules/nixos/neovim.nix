@@ -79,6 +79,7 @@
     # elixir
     beam.packages.erlang_27.elixir-ls
     lexical # I can't find lexical in the beam.packages .. place
+    next-ls
   ];
 
 }
