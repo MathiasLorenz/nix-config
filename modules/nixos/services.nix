@@ -13,9 +13,8 @@
   };
 
   virtualisation = {
-    # install and enable docker daemon
     docker = {
-      enable = true;
+      enable = false;
       enableOnBoot = false;
     };
 
