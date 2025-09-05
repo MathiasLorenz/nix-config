@@ -14,7 +14,14 @@
 
   virtualisation = {
     # install and enable docker daemon
-    docker.enable = true;
+    docker = {
+      enable = true;
+      enableOnBoot = false;
+    };
+
+    podman = {
+      enable = true;
+    };
   };
 
   services = {
