@@ -50,7 +50,7 @@
     # https://nixos.wiki/wiki/Encrypted_DNS
     # To get logs for systemd service
     # journalctl --unit dnscrypt-proxy2.service
-    dnscrypt-proxy2 = {
+    dnscrypt-proxy = {
       enable = true;
       # Settings reference:
       # https://github.com/DNSCrypt/dnscrypt-proxy/blob/master/dnscrypt-proxy/example-dnscrypt-proxy.toml
