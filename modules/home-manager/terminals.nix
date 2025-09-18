@@ -1,7 +1,7 @@
 { ... }:
 {
   programs.ghostty = {
-    enable = true;
+    enable = false;
 
     enableBashIntegration = true;
     enableFishIntegration = true;
@@ -27,7 +27,7 @@
   };
 
   programs.foot = {
-    enable = true;
+    enable = false;
 
     settings = {
       main = {
