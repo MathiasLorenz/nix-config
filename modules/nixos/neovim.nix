@@ -43,7 +43,7 @@
     bash-language-server
     black
     docker-compose-language-service
-    dockerfile-language-server-nodejs
+    dockerfile-language-server
     hadolint
     helm-ls
     lua-language-server
@@ -78,8 +78,7 @@
 
     # elixir
     beam.packages.erlang_27.elixir-ls
-    lexical # I can't find lexical in the beam.packages .. place
+    lexical
     next-ls
   ];
-
 }
