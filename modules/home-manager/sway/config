@@ -44,6 +44,9 @@ input "type:mouse" {
 input "1189:32774:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse" {
     pointer_accel -0.1
 }
+input "1133:50504:Logitech_USB_Receiver_Mouse" {
+    pointer_accel 0.25
+}
 
 ### Output configuration
 #
