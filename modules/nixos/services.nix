@@ -1,7 +1,11 @@
 { ... }:
 {
   networking = {
-    networkmanager.enable = true;
+    networkmanager = {
+      enable = true;
+      wifi.backend = "iwd";
+    };
+
     # Disable for chromecast if needed
     firewall.enable = true;
     nftables.enable = true;
