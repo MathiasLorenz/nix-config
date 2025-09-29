@@ -101,6 +101,7 @@ in
     k9s
     google-cloud-sdk-with-gke-auth
     mbpoll
+    flyway # very chunky :sad:
 
     # Graphical applications
     bitwarden-desktop
