@@ -82,9 +82,11 @@
     };
 
     netbird = {
-      clients.default = {
+      enable = true;
+
+      clients.work = {
         port = 51820;
-        name = "netbird";
+        name = "work";
         interface = "wt0";
         hardened = false;
         autoStart = false;
