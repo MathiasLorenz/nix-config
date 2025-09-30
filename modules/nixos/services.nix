@@ -82,8 +82,6 @@
     };
 
     netbird = {
-      ui.enable = true;
-
       clients.default = {
         port = 51820;
         name = "netbird";
