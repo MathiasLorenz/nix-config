@@ -10,10 +10,11 @@
     firewall.enable = true;
     nftables.enable = true;
 
-    nameservers = [
-      "127.0.0.1"
-      "::1"
-    ];
+    # for dnscrypt-proxy
+    # nameservers = [
+    #   "127.0.0.1"
+    #   "::1"
+    # ];
   };
 
   virtualisation = {
@@ -55,7 +56,8 @@
     # To get logs for systemd service
     # journalctl --unit dnscrypt-proxy.service
     dnscrypt-proxy = {
-      enable = true;
+      # Disable for a bti as I am having troubles with netbird DNS resolving... Should try systemd-resolved at some point
+      enable = false;
       # Settings reference:
       # https://github.com/DNSCrypt/dnscrypt-proxy/blob/master/dnscrypt-proxy/example-dnscrypt-proxy.toml
       settings = {
