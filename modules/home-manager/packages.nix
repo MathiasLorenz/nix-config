@@ -107,7 +107,6 @@ in
     bitwarden-desktop
     signal-desktop-bin
     slack
-    teams-for-linux
     qbittorrent
     vlc
 
