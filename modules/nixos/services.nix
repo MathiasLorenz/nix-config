@@ -1,28 +1,5 @@
 { ... }:
 {
-  networking = {
-    networkmanager = {
-      enable = true;
-      wifi.backend = "iwd";
-    };
-
-    # Disable for chromecast if needed
-    firewall.enable = true;
-    nftables.enable = true;
-
-    # systemd.resolved
-    nameservers = [
-      "1.1.1.1#one.one.one.one"
-      "1.0.0.1#one.one.one.one"
-    ];
-
-    # for dnscrypt-proxy
-    # nameservers = [
-    #   "127.0.0.1"
-    #   "::1"
-    # ];
-  };
-
   virtualisation = {
     docker = {
       enable = false;
@@ -56,60 +33,6 @@
       enable = true;
       # Update database on an interval
       interval = "hourly";
-    };
-
-    # https://nixos.wiki/wiki/Encrypted_DNS
-    # To get logs for systemd service
-    # journalctl --unit dnscrypt-proxy.service
-    dnscrypt-proxy = {
-      # Disable for a bti as I am having troubles with netbird DNS resolving... Should try systemd-resolved at some point
-      enable = false;
-      # Settings reference:
-      # https://github.com/DNSCrypt/dnscrypt-proxy/blob/master/dnscrypt-proxy/example-dnscrypt-proxy.toml
-      settings = {
-        ipv6_servers = true;
-        require_dnssec = true;
-        # Add this to test if dnscrypt-proxy is actually used to resolve DNS requests
-        # query_log.file = "/var/log/dnscrypt-proxy/query.log";
-        sources.public-resolvers = {
-          urls = [
-            "https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md"
-            "https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md"
-          ];
-          cache_file = "/var/cache/dnscrypt-proxy/public-resolvers.md";
-          minisign_key = "RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3";
-        };
-
-        # You can choose a specific set of servers from https://github.com/DNSCrypt/dnscrypt-resolvers/blob/master/v3/public-resolvers.md
-        server_names = [
-          # "mullvad-base-doh"
-          "mullvad-doh"
-          "njalla-doh"
-        ];
-      };
-    };
-
-    resolved = {
-      enable = true;
-      dnssec = "true";
-      domains = [ "~." ];
-      fallbackDns = [
-        "8.8.8.8"
-        "8.8.4.4"
-      ];
-      dnsovertls = "true";
-    };
-
-    netbird = {
-      enable = true;
-
-      clients.work = {
-        port = 51820;
-        name = "work";
-        interface = "wt0";
-        hardened = false;
-        autoStart = false;
-      };
     };
   };
 }

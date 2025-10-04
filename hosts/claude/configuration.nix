@@ -24,6 +24,7 @@
     ../../modules/nixos/fonts.nix
     ../../modules/nixos/neovim.nix
     ../../modules/nixos/services.nix
+    ../../modules/nixos/networking.nix
     ../../modules/nixos/programs.nix
     ../../modules/nixos/sway.nix
     ../../modules/nixos/bluetooth.nix
