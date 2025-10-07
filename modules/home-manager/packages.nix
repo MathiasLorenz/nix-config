@@ -100,7 +100,7 @@ in
     kubectl-cnpg
     k9s
     google-cloud-sdk-with-gke-auth
-    mbpoll
+    # mbpoll  # Build failure
     flyway # very chunky :sad:
 
     # Graphical applications
