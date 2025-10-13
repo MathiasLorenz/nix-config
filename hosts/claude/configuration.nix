@@ -34,7 +34,8 @@
   ];
 
   # OpenCL support with ROCm
-  hardware.amdgpu.opencl.enable = true;
+  # Used for computing things on GPU, not using it currently
+  # hardware.amdgpu.opencl.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
