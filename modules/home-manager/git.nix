@@ -1,17 +1,21 @@
 { ... }:
 {
-  programs.git = {
-    enable = true;
+  programs = {
+    git = {
+      enable = true;
 
-    userName = "MathiasLorenz";
-    # Todo: Make email path dependant
-    userEmail = "lorenz.mathias@gmail.com";
+      settings.user = {
+        # todo: make email path dependent
+        email = "lorenz.mathias@gmail.com";
+        user.name = "MathiasLorenz";
+      };
 
-    extraConfig = {
-      pull.rebase = true;
-      color.ui = true;
-      core.editor = "nvim";
-      init.defaultBranch = "main";
+      settings = {
+        pull.rebase = true;
+        color.ui = true;
+        core.editor = "nvim";
+        init.defaultBranch = "main";
+      };
     };
 
     delta = {
