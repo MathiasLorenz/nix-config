@@ -12,6 +12,4 @@
     enable = true;
     powertop.enable = true;
   };
-
-  # enable tlp... see https://nixos.wiki/wiki/Laptop
 }
