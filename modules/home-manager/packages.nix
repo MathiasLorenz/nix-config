@@ -87,6 +87,7 @@ in
     bitwarden-cli
     dive
     hydra-check
+    eva # calculator
 
     # Work stuff, could be its own nix file
     tenv
