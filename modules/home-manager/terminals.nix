@@ -1,12 +1,12 @@
 { ... }:
 {
   programs.ghostty = {
-    enable = false;
+    enable = true;
 
     enableBashIntegration = true;
     enableFishIntegration = true;
     settings = {
-      theme = "DoomOne";
+      theme = "Doom One";
       font-family = "Hack Nerd Font";
     };
   };
