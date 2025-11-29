@@ -38,9 +38,8 @@
         interface = "wt0";
         hardened = false;
         autoStart = false;
+        ui.enable = false;
       };
     };
-
   };
-
 }
