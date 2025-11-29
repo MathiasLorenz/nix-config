@@ -61,7 +61,7 @@
       set -x EDITOR "nvim"
       set -x VISUAL "nvim"
       set -x READER "zathura"
-      set -x TERMINAL "kitty"
+      set -x TERMINAL "ghostty"
       set -x BROWSER "qutebrowser"
       set -x PAGER "less"
 
