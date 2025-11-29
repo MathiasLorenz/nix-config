@@ -9,7 +9,7 @@
       enable = true;
       defaultEditor = true;
 
-      package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.default;
+      package = inputs.neovim-nightly-overlay.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
       # enable providers for plugins in other languages than lua
       # withPython3 = true;
