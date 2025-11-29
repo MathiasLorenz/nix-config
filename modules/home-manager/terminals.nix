@@ -6,7 +6,7 @@
     enableBashIntegration = true;
     enableFishIntegration = true;
     settings = {
-      theme = "Doom One";
+      theme = "Dracula+";
       font-family = "Hack Nerd Font";
     };
   };
