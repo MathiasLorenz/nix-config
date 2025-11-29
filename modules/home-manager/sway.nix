@@ -26,7 +26,6 @@
       main = {
         font = "Hack Nerd Font:size=12";
         icon-theme = "Papirus";
-        terminal = "wezterm";
       };
 
       colors = {
