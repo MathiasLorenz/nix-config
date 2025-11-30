@@ -8,6 +8,7 @@
     settings = {
       theme = "Dracula+";
       font-family = "Hack Nerd Font";
+      font-size = 11;
     };
   };
 
