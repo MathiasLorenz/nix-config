@@ -8,7 +8,7 @@
     # setup stable nixpkgs
     # see https://nixos-and-flakes.thiscute.world/nixos-with-flakes/downgrade-or-upgrade-packages
     # for how to use stable branch if needed
-    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.11";
 
     # setup home-manager
     home-manager = {
