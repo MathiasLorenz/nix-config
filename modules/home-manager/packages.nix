@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-stable, ... }:
 let
-  google-cloud-sdk-with-gke-auth = pkgs.google-cloud-sdk.withExtraComponents (
-    with pkgs.google-cloud-sdk.components;
+  google-cloud-sdk-with-gke-auth = pkgs-stable.google-cloud-sdk.withExtraComponents (
+    with pkgs-stable.google-cloud-sdk.components;
     [
       gke-gcloud-auth-plugin
     ]
