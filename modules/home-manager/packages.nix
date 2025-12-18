@@ -92,7 +92,7 @@ in
     # Work stuff, could be its own nix file
     tenv
     postgresql_17_jit # Dunno why an non-jit version wasn't available for psql 17
-    beam.packages.erlang_27.elixir_1_18
+    beam.packages.erlang_28.elixir_1_19
     wkhtmltopdf
     inotify-tools
     python312

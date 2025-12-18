@@ -77,7 +77,7 @@
     yaml-language-server
 
     # elixir
-    beam.packages.erlang_27.elixir-ls
+    beam.packages.erlang_28.elixir-ls
     lexical
     next-ls
   ];
