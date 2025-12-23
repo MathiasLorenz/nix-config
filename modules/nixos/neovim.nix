@@ -71,7 +71,6 @@
     stylua
     taplo
     # terraform is non-free fuck that
-    opentofu
     terraform-ls
     tflint
     yaml-language-server
