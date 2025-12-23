@@ -90,7 +90,7 @@ in
     eva # calculator
 
     # Work stuff, could be its own nix file
-    terraform
+    tenv
     postgresql_17_jit # Dunno why an non-jit version wasn't available for psql 17
     beam.packages.erlang_28.elixir_1_19
     wkhtmltopdf

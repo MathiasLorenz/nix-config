@@ -25,6 +25,5 @@
       "steam"
       "steam-unwrapped"
       "postman"
-      "terraform"
     ];
 }
