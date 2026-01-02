@@ -88,6 +88,7 @@ in
     dive
     hydra-check
     eva # calculator
+    mpv # Terminal video player
 
     # Work stuff, could be its own nix file
     tenv
