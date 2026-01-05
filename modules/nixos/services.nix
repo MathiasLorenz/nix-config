@@ -22,9 +22,6 @@
     # Enable CUPS to print documents.
     printing.enable = true;
 
-    # ssh server
-    openssh.enable = true;
-
     # start keyring
     gnome.gnome-keyring.enable = true;
 
