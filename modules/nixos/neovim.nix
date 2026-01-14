@@ -53,7 +53,7 @@
     marksman
     nil
     nixd
-    nixfmt-rfc-style
+    nixfmt
     nodePackages.prettier
     zls
 
