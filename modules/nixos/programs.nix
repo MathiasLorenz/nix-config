@@ -25,5 +25,6 @@
       "steam"
       "steam-unwrapped"
       "postman"
+      "claude-code"
     ];
 }

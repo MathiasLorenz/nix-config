@@ -15,6 +15,7 @@ in
     ../../modules/home-manager/sway.nix
     ../../modules/home-manager/waybar.nix
     ../../modules/home-manager/mime-apps.nix
+    ../../modules/home-manager/ai.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
