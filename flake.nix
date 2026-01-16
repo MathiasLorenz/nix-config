@@ -22,6 +22,9 @@
 
     # build neovim from git
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
+
+    # Claude-code flake
+    claude-code.url = "github:sadjow/claude-code-nix";
   };
 
   outputs =
@@ -31,6 +34,7 @@
       home-manager,
       nixos-hardware,
       neovim-nightly-overlay,
+      claude-code,
       ...
     }:
     let
@@ -67,6 +71,7 @@
               home-manager.extraSpecialArgs = {
                 inherit username;
                 inherit pkgs-stable;
+                inherit inputs;
               };
             }
           ];
@@ -92,6 +97,7 @@
               home-manager.extraSpecialArgs = {
                 inherit username;
                 inherit pkgs-stable;
+                inherit inputs;
               };
             }
           ];
