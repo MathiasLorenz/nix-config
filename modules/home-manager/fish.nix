@@ -100,6 +100,7 @@
       nhs = "nh os switch .";
       nfu = "nix flake update";
       ns = "nix-shell";
+      cb = "claude-bun"; # -bun is chosen in flake input - this has to change if another runtime is chosen (cc is already taken by the gcc compiler)
 
       # cat = "bat";
       # docker
