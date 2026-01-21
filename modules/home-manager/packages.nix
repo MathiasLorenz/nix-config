@@ -106,7 +106,7 @@ in
 
     # Graphical applications
     bitwarden-desktop
-    signal-desktop-bin
+    signal-desktop
     slack
     qbittorrent
     vlc
