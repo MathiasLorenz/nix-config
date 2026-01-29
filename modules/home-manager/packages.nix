@@ -89,6 +89,7 @@ in
     hydra-check
     eva # calculator
     mpv # Terminal video player
+    mdcat
 
     # Work stuff, could be its own nix file
     tenv
