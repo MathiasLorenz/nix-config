@@ -19,14 +19,17 @@
 
   services = {
     resolved = {
-      enable = true;
-      dnssec = "true";
-      domains = [ "~." ];
-      fallbackDns = [
-        "8.8.8.8"
-        "8.8.4.4"
-      ];
-      dnsovertls = "true";
+      settings = {
+        Resolve = {
+          DNSOverTLS = true;
+          DNSSEC = true;
+          Domains = [ "~." ];
+          FallbackDNS = [
+            "8.8.8.8"
+            "8.8.4.4"
+          ];
+        };
+      };
     };
 
     netbird = {
