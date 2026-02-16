@@ -59,11 +59,10 @@
 
     # python
     python3Packages.debugpy
-    python312Packages.python-lsp-server
     python3
     pyright
-    basedpyright
     ruff
+    ty
 
     shellcheck
     shfmt
