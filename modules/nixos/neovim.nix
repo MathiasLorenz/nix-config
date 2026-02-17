@@ -64,6 +64,7 @@
     ruff
     ty
     pyrefly
+    basedpyright
 
     shellcheck
     shfmt
