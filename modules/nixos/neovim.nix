@@ -63,6 +63,7 @@
     pyright
     ruff
     ty
+    pyrefly
 
     shellcheck
     shfmt
