@@ -52,6 +52,27 @@ in
     firefox = {
       enable = true;
     };
+
+    swappy = {
+      enable = true;
+      settings = {
+        # Mostly copied from `man home-configuration.nix`
+        Default = {
+          auto_save = false;
+          early_exit = false;
+          fill_shape = false;
+          line_size = 5;
+          paint_mode = "brush";
+          save_dir = "$HOME/Documents/screenshots";
+          save_filename_format = "%Y%m%d-%H%M%S.png";
+          show_panel = false;
+          text_font = "sans-serif";
+          text_size = 20;
+          transparency = 50;
+          transparent = false;
+        };
+      };
+    };
   };
 
   # The home.packages option allows you to install Nix packages into your

@@ -237,6 +237,7 @@ bindsym $mod+Shift+Tab workspace prev
 # Needs grim and slurp installed on system
 # Capture specified screen area to to clipboard
 bindsym $mod+p exec grim -g "$(slurp)" - | wl-copy
+bindsym $mod+Shift+p exec grim -g "$(slurp)" - | swappy -f -
 
 # Resizing containers:
 #
