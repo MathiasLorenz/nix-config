@@ -78,7 +78,6 @@
 
     # elixir
     beam.packages.erlang_28.elixir-ls
-    lexical
-    next-ls
+    beamPackages.expert
   ];
 }
