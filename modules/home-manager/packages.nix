@@ -113,6 +113,7 @@ in
     mdcat
     libimobiledevice # Mounting iphone dep
     ifuse # To mount iphone, mount with `ifuse ~/iphone-mount/` unmount with `fusermount -u ~/iphone-mount`
+    libheif # .heif image convert, convert with `heif-dec <input-img>` then .jpg is created with same name
 
     # Work stuff, could be its own nix file
     tenv
