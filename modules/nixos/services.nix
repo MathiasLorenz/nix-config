@@ -31,5 +31,8 @@
       # Update database on an interval
       interval = "hourly";
     };
+
+    # USB multiplexing daemon to allow iphone to connect over usb
+    usbmuxd.enable = true;
   };
 }
