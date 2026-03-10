@@ -111,6 +111,8 @@ in
     eva # calculator
     mpv # Terminal video player
     mdcat
+    libimobiledevice # Mounting iphone dep
+    ifuse # To mount iphone, mount with `ifuse ~/iphone-mount/` unmount with `fusermount -u ~/iphone-mount`
 
     # Work stuff, could be its own nix file
     tenv
