@@ -34,5 +34,11 @@
 
     # USB multiplexing daemon to allow iphone to connect over usb
     usbmuxd.enable = true;
+
+    # For wifi printers
+    avahi = {
+      enable = true;
+      nssmdns4 = true;
+    };
   };
 }
