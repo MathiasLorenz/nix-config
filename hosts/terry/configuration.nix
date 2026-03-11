@@ -31,6 +31,7 @@
     ../../modules/nixos/qutebrowser.nix
     ../../modules/nixos/laptop.nix
     ../../modules/nixos/env-variables.nix
+    ../../modules/nixos/printing.nix
   ];
 
   # OpenCL support with ROCm

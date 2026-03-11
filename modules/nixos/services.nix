@@ -19,9 +19,6 @@
     # enable firmware udpate daemon
     fwupd.enable = true;
 
-    # Enable CUPS to print documents.
-    printing.enable = true;
-
     # start keyring
     gnome.gnome-keyring.enable = true;
 
@@ -34,11 +31,5 @@
 
     # USB multiplexing daemon to allow iphone to connect over usb
     usbmuxd.enable = true;
-
-    # For wifi printers
-    avahi = {
-      enable = true;
-      nssmdns4 = true;
-    };
   };
 }
