@@ -54,7 +54,7 @@
     nil
     nixd
     nixfmt
-    prettier
+    # prettier
     zls
 
     # python
