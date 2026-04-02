@@ -47,14 +47,14 @@
     hadolint
     helm-ls
     lua-language-server
-    nodePackages.vscode-json-languageserver
+    vscode-json-languageserver
     # markdown-toc # TODO: what is the packge name?
     markdownlint-cli2 # TODO: this is not recognized
     marksman
     nil
     nixd
     nixfmt
-    nodePackages.prettier
+    prettier
     zls
 
     # python
