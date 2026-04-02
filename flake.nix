@@ -20,9 +20,6 @@
     # community hardware configurations
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
-    # build neovim from git
-    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
-
     # Claude-code flake
     claude-code.url = "github:sadjow/claude-code-nix";
   };
@@ -33,7 +30,6 @@
       nixpkgs-stable,
       home-manager,
       nixos-hardware,
-      neovim-nightly-overlay,
       claude-code,
       ...
     }:
