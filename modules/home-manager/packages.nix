@@ -112,8 +112,15 @@ in
     mpv # Terminal video player
     mdcat
     libimobiledevice # Mounting iphone dep
-    ifuse # To mount iphone, mount with `ifuse ~/iphone-mount/` unmount with `fusermount -u ~/iphone-mount`
     libheif # .heif image convert, convert with `heif-dec <input-img>` then .jpg is created with same name
+
+    # To mount iphone, mount with `ifuse ~/iphone-mount/` unmount with `fusermount -u ~/iphone-mount`
+    ifuse
+    # To mount Apple time machine backups, to mount (-v 1 is volume one, use `sudo apfsutil /dev/sda` to see avail volumes)
+    #   `sudo apfs-fuse -o allow_other -v 1 /dev/sda /media/usb-drive/`
+    # to unmount
+    #   'sudo umount /media/usb-drive/'
+    apfs-fuse
 
     # Work stuff, could be its own nix file
     tenv
