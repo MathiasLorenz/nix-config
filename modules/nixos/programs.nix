@@ -13,6 +13,11 @@
       enable = true;
       polkitPolicyOwners = [ username ];
     };
+
+    localsend = {
+      enable = true;
+      openFirewall = true;
+    };
   };
 
   nixpkgs.config.allowUnfreePredicate =
