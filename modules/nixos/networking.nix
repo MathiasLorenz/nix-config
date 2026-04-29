@@ -3,7 +3,11 @@
   networking = {
     networkmanager = {
       enable = true;
-      wifi.backend = "iwd";
+      wifi = {
+        backend = "iwd";
+        powersave = true;
+      };
+
       # from https://wiki.nixos.org/wiki/NetworkManager
       dns = "none";
     };
