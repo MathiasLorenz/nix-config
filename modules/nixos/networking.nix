@@ -4,34 +4,25 @@
     networkmanager = {
       enable = true;
       wifi.backend = "iwd";
+      # from https://wiki.nixos.org/wiki/NetworkManager
+      dns = "none";
     };
+
+    # from https://wiki.nixos.org/wiki/NetworkManager
+    useDHCP = false;
+    dhcpcd.enable = false;
 
     # Disable for chromecast if needed
     firewall.enable = true;
     nftables.enable = true;
 
-    # systemd.resolved
     nameservers = [
-      "1.1.1.1#one.one.one.one"
-      "1.0.0.1#one.one.one.one"
+      "1.1.1.1"
+      "1.0.0.1"
     ];
   };
 
   services = {
-    resolved = {
-      settings = {
-        Resolve = {
-          DNSOverTLS = true;
-          DNSSEC = true;
-          Domains = [ "~." ];
-          FallbackDNS = [
-            "8.8.8.8"
-            "8.8.4.4"
-          ];
-        };
-      };
-    };
-
     netbird = {
       enable = true;
 
