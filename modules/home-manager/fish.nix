@@ -100,7 +100,7 @@
       nhs = "nh os switch .";
       nfu = "nix flake update";
       ns = "nix-shell";
-      clc = "claude-code";
+      clc = "claude";
 
       # cat = "bat";
       # docker
