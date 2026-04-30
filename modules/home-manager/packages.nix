@@ -143,6 +143,7 @@ in
     slack
     qbittorrent
     vlc
+    qbz
 
     # Compiler stuff
     gcc
