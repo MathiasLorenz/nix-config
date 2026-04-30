@@ -144,6 +144,7 @@ in
     qbittorrent
     vlc
     qbz
+    libreoffice-fresh
 
     # Compiler stuff
     gcc
