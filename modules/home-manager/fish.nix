@@ -62,7 +62,7 @@
       set -x VISUAL "nvim"
       set -x READER "zathura"
       set -x TERMINAL "ghostty"
-      set -x BROWSER "qutebrowser"
+      set -x BROWSER "firefox"
       set -x PAGER "less"
 
       # Add roc-lang to path - this must be updated on new nightly releases (when downloaded)
