@@ -54,6 +54,11 @@ in
       configPath = "${config.xdg.configHome}/mozilla/firefox";
     };
 
+    chromium = {
+      enable = true;
+      package = pkgs.ungoogled-chromium;
+    };
+
     swappy = {
       enable = true;
       settings = {
