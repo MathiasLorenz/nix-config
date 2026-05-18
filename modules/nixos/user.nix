@@ -17,6 +17,8 @@
       "video"
       "audio"
       "input"
+      "dialout"
+      "serial"
     ];
 
     # set default shell to bash, which launches fish
