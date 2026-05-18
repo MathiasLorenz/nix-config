@@ -60,7 +60,6 @@
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
 
-    blueman
     pavucontrol # pulse audio volume control
   ];
 }
