@@ -7,7 +7,7 @@
 }:
 
 {
-  networking.hostName = "terry";
+  networking.hostName = "mathias-framework";
 
   nix.settings.experimental-features = [
     "nix-command"
