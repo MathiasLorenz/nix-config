@@ -5,7 +5,7 @@
     # setup unstable nixpkgs as default
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     # Or this if you want newest nixpkgs and not the nixos branch of nixpkgs
-    #nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     # setup stable nixpkgs
     # see https://nixos-and-flakes.thiscute.world/nixos-with-flakes/downgrade-or-upgrade-packages
