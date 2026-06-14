@@ -47,6 +47,13 @@ input "1189:32774:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse" {
 input "1133:50504:Logitech_USB_Receiver_Mouse" {
     pointer_accel 0.25
 }
+input "type:touchpad" {
+    tap enabled            # enables click-on-tap
+    tap_button_map lrm     # tap with 1 finger = left click, 2 fingers = right click, 3 fingers = middle click
+    dwt enabled            # disable (touchpad) while typing
+    dwtp enabled           # disable (touchpad) while track pointing
+    natural_scroll enabled # 'inverted scrolling', i.e. natural scroll
+}
 
 ### Output configuration
 #
