@@ -29,6 +29,7 @@
   services = {
     netbird = {
       enable = true;
+      ui.enable = false;
 
       clients.work = {
         port = 51820;
@@ -36,7 +37,6 @@
         interface = "wt0";
         hardened = false;
         autoStart = false;
-        ui.enable = false;
       };
     };
   };
