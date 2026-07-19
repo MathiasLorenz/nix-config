@@ -79,6 +79,19 @@ in
         };
       };
     };
+
+    ghostty = {
+      enable = true;
+
+      enableBashIntegration = true;
+      enableFishIntegration = true;
+      settings = {
+        theme = "Dracula+";
+        font-family = "Hack Nerd Font";
+        font-size = 11;
+      };
+    };
+
   };
 
   # The home.packages option allows you to install Nix packages into your
