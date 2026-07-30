@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   programs = {
     git = {
@@ -17,6 +17,16 @@
         core.editor = "nvim";
         init.defaultBranch = "main";
       };
+
+      hooks.pre-commit = pkgs.writeShellScript "pre-commit" ''
+        branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+        if [ "$branch" = "main" ] || [ "$branch" = "master" ]; then
+          echo "ERROR: Direct commits to '$branch' are blocked." >&2
+          echo "Create a feature branch: git switch -c <branch-name>" >&2
+          echo "To override (rarely needed): git commit --no-verify" >&2
+          exit 1
+        fi
+      '';
     };
 
     delta = {
