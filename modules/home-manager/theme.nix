@@ -26,10 +26,6 @@
       name = "Papirus-Dark";
       package = pkgs.papirus-icon-theme;
     };
-    theme = {
-      name = "Arc-Dark";
-      package = pkgs.arc-theme;
-    };
   };
 
   dconf = {
