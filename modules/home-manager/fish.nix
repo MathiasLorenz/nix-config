@@ -100,6 +100,7 @@
       nhs = "nh os switch .";
       nfu = "nix flake update";
       ns = "nix-shell";
+      nsrf = "nix-shell --run fish";
       clc = "claude";
 
       # cat = "bat";
