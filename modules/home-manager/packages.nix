@@ -156,6 +156,8 @@ in
     k9s
     google-cloud-sdk-with-gke-auth
     kubeconform
+    argocd
+    argonaut
 
     # Graphical applications
     bitwarden-desktop
