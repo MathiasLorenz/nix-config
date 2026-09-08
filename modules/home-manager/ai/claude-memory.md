@@ -74,3 +74,7 @@ nix profile install nixpkgs#packageName
 - `NIX_PATH`: Points to nix channels
 - `PATH`: Contains only explicitly declared packages
 - Many standard tools may not be available without declaring them
+
+## Commits
+
+I like to commit things myself. You should leave changes for me to commit.
