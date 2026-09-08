@@ -166,7 +166,7 @@ in
     qbittorrent
     vlc
     qbz
-    libreoffice-fresh
+    libreoffice-stable
 
     # Compiler stuff
     gcc
