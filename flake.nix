@@ -22,6 +22,12 @@
     # community hardware configurations
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
+    # Nix User Repository, used here for packaged Firefox extensions
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Claude-code flake
     claude-code.url = "github:sadjow/claude-code-nix";
   };
@@ -65,6 +71,7 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
+              home-manager.backupFileExtension = "backup";
               home-manager.users.${username} = import ./modules/home-manager/home.nix;
               home-manager.extraSpecialArgs = {
                 inherit username;
@@ -91,6 +98,7 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
+              home-manager.backupFileExtension = "backup";
               home-manager.users.${username} = import ./modules/home-manager/home.nix;
               home-manager.extraSpecialArgs = {
                 inherit username;

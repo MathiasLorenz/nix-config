@@ -1,4 +1,9 @@
-{ pkgs, config, ... }:
+{
+  pkgs,
+  config,
+  inputs,
+  ...
+}:
 let
   google-cloud-sdk-with-gke-auth = pkgs.google-cloud-sdk.withExtraComponents (
     with pkgs.google-cloud-sdk.components;
@@ -6,6 +11,12 @@ let
       gke-gcloud-auth-plugin
     ]
   );
+
+  firefox-addons = inputs.nur.legacyPackages.${pkgs.system}.repos.rycee.firefox-addons;
+  firefoxExtensions = with firefox-addons; [
+    ublock-origin
+    vimium
+  ];
 in
 {
   programs = {
@@ -52,6 +63,25 @@ in
     firefox = {
       enable = true;
       configPath = "${config.xdg.configHome}/mozilla/firefox";
+
+      profiles = {
+        personal = {
+          id = 0;
+          isDefault = true;
+          extensions.packages = firefoxExtensions;
+          settings = {
+            "extensions.autoDisableScopes" = 0;
+          };
+        };
+
+        worky = {
+          id = 1;
+          extensions.packages = firefoxExtensions;
+          settings = {
+            "extensions.autoDisableScopes" = 0;
+          };
+        };
+      };
     };
 
     chromium = {
