@@ -17,6 +17,13 @@ let
     ublock-origin
     vimium
   ];
+  firefoxSettings = {
+    "extensions.autoDisableScopes" = 0;
+    "sidebar.revamp" = true;
+    "sidebar.verticalTabs" = true;
+    # Resume the previous session's tabs/windows on startup
+    "browser.startup.page" = 3;
+  };
 in
 {
   programs = {
@@ -69,17 +76,13 @@ in
           id = 0;
           isDefault = true;
           extensions.packages = firefoxExtensions;
-          settings = {
-            "extensions.autoDisableScopes" = 0;
-          };
+          settings = firefoxSettings;
         };
 
         worky = {
           id = 1;
           extensions.packages = firefoxExtensions;
-          settings = {
-            "extensions.autoDisableScopes" = 0;
-          };
+          settings = firefoxSettings;
         };
       };
     };
