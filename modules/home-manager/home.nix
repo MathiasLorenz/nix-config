@@ -6,6 +6,7 @@ in
 {
   imports = [
     ../../modules/home-manager/packages.nix
+    ../../modules/home-manager/browsers.nix
     ../../modules/home-manager/fish.nix
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/gh.nix
