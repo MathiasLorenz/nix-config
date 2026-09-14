@@ -157,6 +157,7 @@ in
     vlc
     qbz
     libreoffice-stable
+    kooha # Screen recording
 
     # Compiler stuff
     gcc
