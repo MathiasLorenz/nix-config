@@ -155,7 +155,6 @@ in
     slack
     qbittorrent
     vlc
-    qbz
     libreoffice-stable
     kooha # Screen recording
 
