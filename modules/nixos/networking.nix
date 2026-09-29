@@ -4,7 +4,7 @@
     networkmanager = {
       enable = true;
       wifi = {
-        backend = "iwd";
+        backend = "wpa_supplicant";
         powersave = true;
       };
 
