@@ -59,6 +59,7 @@
     ty
     pyrefly
     basedpyright
+    zuban
 
     shellcheck
     shfmt
