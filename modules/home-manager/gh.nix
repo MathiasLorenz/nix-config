@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   programs.gh = {
     enable = true;
@@ -15,5 +15,10 @@
       color_lables = "enabled";
       spinner = "enabled";
     };
+
+    extensions = [
+      pkgs.gh-dash
+      pkgs.gh-stack
+    ];
   };
 }
