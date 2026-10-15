@@ -9,6 +9,11 @@
     podman = {
       enable = true;
     };
+
+    # On 15/10-2026 there seems to be a regression with podman <-> journald integration
+    # after linking to systemd-minimal-libs-261.3 (from systemd-261.3).
+    # This should hopefully fix the issue (not getting log messages)
+    containers.containersConf.settings.containers.log_driver = "k8s-file";
   };
 
   services = {
