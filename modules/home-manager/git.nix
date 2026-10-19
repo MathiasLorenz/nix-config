@@ -28,6 +28,13 @@
           printf "%bTo override: git commit --no-verify%b\n" "$red" "$reset" >&2
           exit 1
         fi
+
+        # core.hooksPath makes git ignore the repo's own hooks, so run its pre-commit hook here.
+        # Not `git rev-parse --git-path hooks`, as that resolves to core.hooksPath (this script)
+        local_hook="$(git rev-parse --git-common-dir)/hooks/pre-commit"
+        if [ -x "$local_hook" ]; then
+          exec "$local_hook" "$@"
+        fi
       '';
     };
 
