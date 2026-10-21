@@ -157,6 +157,7 @@ in
     vlc
     libreoffice-stable
     kooha # Screen recording
+    qdirstat # Disk usage tool
 
     # Compiler stuff
     gcc
