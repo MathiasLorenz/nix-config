@@ -154,7 +154,6 @@ in
     signal-desktop
     slack
     qbittorrent
-    vlc
     libreoffice-stable
     kooha # Screen recording
     qdirstat # Disk usage tool
