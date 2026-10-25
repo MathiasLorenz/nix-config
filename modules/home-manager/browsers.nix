@@ -5,7 +5,8 @@
   ...
 }:
 let
-  firefox-addons = inputs.nur.legacyPackages.${pkgs.stdenv.hostPlatform.system}.repos.rycee.firefox-addons;
+  firefox-addons =
+    inputs.nur.legacyPackages.${pkgs.stdenv.hostPlatform.system}.repos.rycee.firefox-addons;
   firefoxExtensions = with firefox-addons; [
     ublock-origin
     vimium
@@ -41,7 +42,7 @@ in
     };
 
     chromium = {
-      enable = true;
+      enable = false;
       package = pkgs.ungoogled-chromium;
     };
   };
