@@ -140,7 +140,6 @@ in
     beam.packages.erlang_28.elixir_1_19
     wkhtmltopdf
     inotify-tools
-    python312
     postman
     kubectl
     kubectl-cnpg
