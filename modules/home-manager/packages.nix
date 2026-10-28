@@ -124,6 +124,7 @@ in
     libheif # .heif image convert, convert with `heif-dec <input-img>` then .jpg is created with same name
     putty
     usbutils # e.g. lsusb
+    mosh # ssh alternative
 
     # To mount iphone, mount with `ifuse ~/iphone-mount/` unmount with `fusermount -u ~/iphone-mount`
     ifuse
