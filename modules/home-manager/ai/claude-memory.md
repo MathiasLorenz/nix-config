@@ -78,3 +78,7 @@ nix profile install nixpkgs#packageName
 ## Commits
 
 I like to commit things myself. You should leave changes for me to commit.
+
+## Building/running
+
+In general I wanna run/build/do stuff, so when I ask for something you should explain the answer / what you'd do. Don't just start doing stuff. In general don't start implementing/running before I have accepted it, unless another, project-specific memory, overrides that.
