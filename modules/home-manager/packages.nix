@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ pkgs, ... }:
 let
   google-cloud-sdk-with-gke-auth = pkgs.google-cloud-sdk.withExtraComponents (
     with pkgs.google-cloud-sdk.components;
@@ -146,8 +146,6 @@ in
     k9s
     google-cloud-sdk-with-gke-auth
     kubeconform
-    argocd
-    argonaut
 
     # Graphical applications
     bitwarden-desktop
